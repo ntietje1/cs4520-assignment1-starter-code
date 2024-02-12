@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.cs4520.assignment1.Product
+import com.cs4520.assignment1.ProductAdapter
 import com.cs4520.assignment1.R
 import com.cs4520.assignment1.productsDataset
 
@@ -21,6 +22,7 @@ class ProductListFragment: Fragment() {
         val products = productsDataset.map { Product(it) }
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.adapter = ProductAdapter(products)
         return view
     }
 }

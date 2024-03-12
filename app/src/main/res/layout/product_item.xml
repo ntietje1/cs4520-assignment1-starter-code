@@ -16,7 +16,7 @@
         android:layout_height="25dp"
         android:layout_weight="1"
         android:gravity="start"
-        android:text="TextView"
+        android:text="@string/placeholder"
         android:textColor="#000000" />
 
     <ImageView
@@ -25,7 +25,8 @@
         android:layout_height="80dp"
         android:layout_weight="1"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/equipment" />
+        app:srcCompat="@drawable/equipment"
+        android:contentDescription="@string/placeholder" />
 
     <TextView
         android:id="@+id/expiryDate"
@@ -33,7 +34,7 @@
         android:layout_height="25dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/placeholder"
         android:textColor="#000000" />
 
     <TextView
@@ -42,6 +43,6 @@
         android:layout_height="25dp"
         android:layout_weight="1"
         android:gravity="end"
-        android:text="TextView"
+        android:text="@string/placeholder"
         android:textColor="#000000" />
 </LinearLayout>

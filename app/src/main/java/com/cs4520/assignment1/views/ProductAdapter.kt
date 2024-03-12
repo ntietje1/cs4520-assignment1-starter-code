@@ -1,4 +1,4 @@
-package com.cs4520.assignment1
+package com.cs4520.assignment1.views
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.cs4520.assignment1.R
+import com.cs4520.assignment1.data.Product
 
 class ProductAdapter(private val productList: List<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
     class ProductViewHolder(productView: View) : RecyclerView.ViewHolder(productView) {
